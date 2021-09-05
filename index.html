@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Adventure Time Todo</title>
+  </head>
+  <body>
+    <div id="login" class="hidden">
+      <form id="login-form">
+        <h1 class="font-style">Chooes your character.</h1>
+        <div id="characters" class="flex-center">
+          <div id="finn">
+            <img src="img/finn.png" />
+          </div>
+          <div id="bubblegum">
+            <img src="img/bubblegum.png" />
+          </div>
+          <div id="marceline">
+            <img src="img/marceline.png" />
+          </div>
+          <div id="jake">
+            <img src="img/jake.png" />
+          </div>
+        </div>
+        <input
+          required
+          maxlength="15"
+          type="text"
+          placeholder="What is your name?"
+        />
+        <div id="login-button">
+          <button>Go!</button>
+        </div>
+      </form>
+    </div>
+    <main class="hidden">
+      <div id="greeting">
+        <img src="img/finn.png" />
+        <h1 class="font-style"></h1>
+      </div>
+      <div id="clock" class="font-style flex-center">00:00:00</div>
+      <div id="weather" class="flex-center font-style">loading ...</div>
+      <form id="todo-form" class="flex-center">
+        <input
+          type="text"
+          placeholder="Write a To Do and Press Enter"
+          required
+        />
+      </form>
+      <!-- <div id="todo-list">
+        <ul></ul>
+      </div> -->
+      <ul id="todo-list"></ul>
+    </main>
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
+</html>
