@@ -1,0 +1,215 @@
+@font-face {
+  font-family: "DungGeunMo";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DOSGothic";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/DOSGothic.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: rgb(173, 232, 248);
+  width: 200%;
+  transition: 1s;
+  display: flex;
+  overflow: hidden;
+  margin: 0;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+}
+
+/* 영어는 둥근모
+한글은 도스고딕
+?? */
+
+img {
+  object-fit: contain;
+}
+
+input {
+  text-align: center;
+  width: 450px;
+  height: 50px;
+  font-size: 30px;
+  border-color: rgb(145, 255, 0);
+  border-radius: 10px;
+  font-family: "DungGeunMo";
+}
+
+#login {
+  text-align: center;
+  width: 100vw;
+  font-family: "DungGeunMo";
+}
+
+#login-form {
+  padding-top: 90px;
+  /* 이거 상대적인 비율로 해야하나? */
+}
+
+#login-form input {
+  margin-top: 80px;
+}
+
+#characters {
+  margin-top: 60px;
+}
+
+#characters * {
+  display: flex;
+  align-items: center;
+}
+
+#characters > div:hover {
+  border: 1px solid rgb(255, 255, 255);
+}
+
+#characters * img:hover {
+  animation: shake 1.3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(6deg);
+  }
+  10% {
+    transform: rotate(-6deg);
+  }
+  20% {
+    transform: rotate(6deg);
+  }
+  30% {
+    transform: rotate(-6deg);
+  }
+  40% {
+    transform: rotate(6deg);
+  }
+  50% {
+    transform: rotate(-6deg);
+  }
+  60% {
+    transform: rotate(6deg);
+  }
+  70% {
+    transform: rotate(-6deg);
+  }
+  80% {
+    transform: rotate(6deg);
+  }
+  90% {
+    transform: rotate(-6deg);
+  }
+  100% {
+    transform: rotate(6deg);
+  }
+}
+
+#finn {
+  padding: 10px 36px;
+}
+
+#bubblegum {
+  padding: 10px 32px;
+}
+
+#marceline {
+  padding: 10px 41.5px;
+}
+
+#jake {
+  padding: 10px 30px;
+}
+
+#login-button {
+  text-align: center;
+  margin-top: 60px;
+}
+
+#login-button button {
+  font-size: 100px;
+  font-family: "DungGeunMo";
+  background-color: transparent;
+  border: none;
+}
+
+#login-button button:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+#greeting {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#greeting h1 {
+  display: inline;
+  margin-left: 20px;
+}
+
+#greeting img {
+  width: 100px;
+}
+
+#clock {
+  margin-top: 20px;
+  font-size: 200px;
+  text-shadow: 2px 2px rgb(122, 122, 122);
+}
+
+#weather {
+  font-size: 25px;
+}
+
+#todo-form {
+  margin-top: 40px;
+}
+
+#todo-list {
+  background-color: rgba(255, 255, 255, 0.705);
+  width: 400px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 30px;
+  font-family: "DOSGothic";
+}
+
+#todo-list * {
+  list-style-type: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.selected {
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.font-style {
+  color: rgb(255, 255, 255);
+  font-family: "DungGeunMo";
+  text-shadow: 1.5px 1.5px rgb(122, 122, 122);
+}
