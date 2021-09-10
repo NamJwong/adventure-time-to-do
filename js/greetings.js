@@ -121,7 +121,7 @@ function setCharacterStyle(character) {
 function getRandomNum(key, array) {
   const RADOMNUM_KEY = key;
   let randomNum = Math.floor(Math.random() * array.length);
-  const beforeRandomNum = localStorage.getItem(RADOMNUM_KEY);
+  const beforeRandomNum = parseInt(localStorage.getItem(RADOMNUM_KEY));
   if(beforeRandomNum !== null) {
     while(randomNum === beforeRandomNum) {
       randomNum = Math.floor(Math.random() * array.length);
