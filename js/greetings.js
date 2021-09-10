@@ -118,9 +118,22 @@ function setCharacterStyle(character) {
   }
 }
 
+function getRandomNum(key, array) {
+  const RADOMNUM_KEY = key;
+  let randomNum = Math.floor(Math.random() * array.length);
+  const beforeRandomNum = localStorage.getItem(RADOMNUM_KEY);
+  if(beforeRandomNum !== null) {
+    while(randomNum === beforeRandomNum) {
+      randomNum = Math.floor(Math.random() * array.length);
+    }
+  }
+  localStorage.setItem(RADOMNUM_KEY, randomNum);
+  return randomNum;
+}
+
 function paintGreetings(userInfo) {
   checkTimeZone();
-  const n = Math.floor(Math.random() * cheerings.length);
+  const n = Math.floor(getRandomNum("cheeringRandomNum", cheerings));
   const todaysCheerings = cheerings[n];
   greetingCharacter.src = `img/${userInfo.character}.png`;
   cheering.innerText = `${userInfo.name}, ${todaysCheerings}`;
