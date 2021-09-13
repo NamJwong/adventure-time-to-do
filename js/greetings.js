@@ -19,9 +19,6 @@ const evenigCheerings = [
 ]
 
 // TODO 꼭 전역변수여야 하는지 다시 한 번씩 고민해보기
-// const userInfo = {
-//   character: null
-// };
 let selectedCharacter = null;
 let beforeTimeZone = 0; // 0 - else, 1 - mornig, 2 - evening
 let cheerings = [
