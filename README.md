@@ -4,7 +4,7 @@
 * 아직 화면 크기를 고려하여 만드는 것에 어려움을 느껴 13인치 노트북 화면을 기준으로 만들었습니다.
 * 크롬 브라우저로 실행해야 정상적으로 작동합니다.
 
-[결과물 보러가기](https://jynam17.github.io/AdventureTimeToDo/ "결과물 보러가기")
+[결과물 보러가기](https://namjwong.github.io/adventure-time-to-do/ "결과물 보러가기")
 
 ## 시연 gif
 ![투두시연움짤1](https://user-images.githubusercontent.com/73823388/132971977-1fcafffc-2623-4e39-bc9d-faffe13546be.gif)
